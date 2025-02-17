@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    // ( إِنَّ اللَّهَ وَمَلَائِكَتَهُ يُصَلُّونَ عَلَى النَّبِيِّ ۚ يَا أَيُّهَا الَّذِينَ آمَنُوا صَلُّوا عَلَيْهِ وَسَلِّمُوا تَسْلِيمًا )
+    int n;
+    cin >> n;
+    vector<string> arr(n);
+    string s = "";
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+        if(s == "")s = arr[i];
+        if(s.size() > arr[i].size())s = arr[i];
+    }
+    int fg =0 ;
+    for(auto it:arr)
+    {
+        if(it.compare(it.size() - s.size(), s.size(), s) != 0)
+        {
+            cout<<"Not found";
+            fg = 1;
+            break;
+        }
+    }
+    if(fg==0)cout<<s;
+    
+    return 0;
+}
