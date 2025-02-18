@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    long long AB, BX;
+    cin >> AB >> BX;
+
+    long long side = AB - 2 * BX; 
+    long long area = side * side; 
+
+    cout << area << '\n'; 
+
+    return 0;
+}
