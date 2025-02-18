@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    char c;cin>>c;
+
+    int n;cin>>n;
+    long long m;cin>>m;
+    float x;cin>>x;
+    double y;cin>>y;
+    cout<<c<<' '<<n<< ' '<<m<<' '<<x<<' '<<y;
+    return 0;
+}
