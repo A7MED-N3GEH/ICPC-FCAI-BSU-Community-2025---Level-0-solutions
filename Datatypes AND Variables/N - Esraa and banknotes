@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+
+    int count_50 = n / 50;       
+    int rem_50 = n % 50;
+
+    int count_20 = rem_50 / 20;     
+    int rem_20 = rem_50 % 20; 
+
+    int count_1 = rem_20; 
+
+    cout<< (count_50 + count_20 + count_1); 
+
+    return 0;
+}
