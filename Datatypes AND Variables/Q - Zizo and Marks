@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    long long n, x;
+    cin >> n >> x;
+
+    long long a = (x + n) / 4;
+    long long b = 3 * a - x;
+    long long c = n - (a + b);
+
+    cout << a << " " << b << " " << c << '\n';
+    return 0;
+}
