@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    long long n;
+    cin >> n;
+
+    long long hours = n / 3600;         
+    long long remaining_seconds = n % 3600;  
+    long long minutes = remaining_seconds / 60; 
+    long long seconds = remaining_seconds % 60; 
+
+    cout << hours << " " << minutes << " " << seconds << '\n';
+
+    return 0;
+}
